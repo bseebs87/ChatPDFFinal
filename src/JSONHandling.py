@@ -1,7 +1,6 @@
 import pinecone
 from sentence_transformers import SentenceTransformer
 import config
-from io import BytesIO
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import uuid
 import json

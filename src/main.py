@@ -4,25 +4,12 @@ from streamlit_chat import message
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 import os
-from langchain.document_loaders import TextLoader, PyPDFLoader, JSONLoader
-from langchain.text_splitter import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from langchain.llms import OpenAI
-from langchain.chains import LLMChain, RetrievalQA
+from langchain.chains import LLMChain
 from pprint import pprint
 from langchain import PromptTemplate
-import json
-import itertools
 import pinecone
-import itertools
 from sentence_transformers import SentenceTransformer
-from langchain.embeddings import HuggingFaceEmbeddings
-import configparser
-from io import BytesIO
-import PyPDF2
-import fitz
-import re
-from transformers import AutoTokenizer
-from langchain.vectorstores import Pinecone
 import io
 import config
 import PDFHandling 
